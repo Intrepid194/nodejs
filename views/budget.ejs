@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/budget_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <%- include('partials/header') %>
+        </header>
+        <nav>
+            <ul>
+                <ul class="navbar">
+                    <li class="navbar-li"><a href="/accounts-home">Accounts</a></li>
+                    <li class="navbar-li"><a href="/budget-tracker">Budget Tracker</a></li>
+                    <li class="navbar-li"><a href="/bankHometown/BH-Checking">BankHometown Checking</a></li>
+                    <li class="navbar-li"><a href="/bankHometown/BH-Savings">BankHometown Savings</a></li>
+                    <li class="navbar-li"><a href="/DCU/DCU-Checking">DCU Checking</a></li>
+                    <li class="navbar-li"><a href="/DCU/DCU-Savings">DCU Savings</a></li>
+                    <li class="navbar-li"><a href="/Discover/Discover-Credit">Discover Credit</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <main>
+                <div class="budget-tble">
+                    <table>
+                        <th colspan="3">Budget Summary</th>
+                        <tr>
+                            <th>Description</th>
+                            <th>Projected</th>
+                            <th>Actual</th>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>$$$</td>
+                            <td>$$$</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>$$$</td>
+                            <td>$$$</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>$$$</td>
+                            <td>$$$</td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>$$$</td>
+                            <td>$$$</td>
+                        </tr>
+                    </table>
+                </div>
+        </main>
+        <footer>
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/accounts_summary_style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <%- include('partials/header') %>
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar-li"><a href="/accounts-home">Accounts</a></li>
+                <li class="navbar-li"><a href="#">Net Worth Tracker</a></li>
+                <li class="navbar-li"><a href="/upload-files">Upload Files</a></li>
+                <li class="navbar-li"><a href="/budget-tracker">Budget Tracker</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="accts-summary">
+                <table>
+                    <th colspan="2">Accounts Balance</th>
+                    <tr>
+                        <td>Total</td>
+                        <td>$$$</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="accts-summary">
+                <table>
+                    <th colspan="2">Accounts Summary</th>
+                    <tr>
+                        <td><a href="/bankHometown/BH-Checking">BankHometown Checking</a></td>
+                        <td>$$$</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/bankHometown/BH-Savings">BankHometown Savings</a></td>
+                        <td>$$$</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/DCU/DCU-Checking">DCU Checking</a></td>
+                        <td>$$$</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/DCU/DCU-Savings">DCU Savings</a></td>
+                        <td>$$$</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/Discover/Discover-Credit">Discover Credit</a></td>
+                        <td>$$$</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>

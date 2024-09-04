@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/accounts_table_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <%- include('partials/header') %>
+        </header>
+        <nav>
+            <ul class="navbar">
+                <li class="navbar-li"><a href="/accounts-home">Accounts</a></li>
+                <li class="navbar-li"><a href="#">Budget Tracker</a></li>
+                <li class="navbar-li"><a href="/bankHometown/BH-Checking">BankHometown Checking</a></li>
+                <li class="navbar-li"><a href="/bankHometown/BH-Savings">BankHometown Savings</a></li>
+                <li class="navbar-li"><a href="/DCU/DCU-Checking">DCU Checking</a></li>
+                <li class="navbar-li"><a href="/DCU/DCU-Savings">DCU Savings</a></li>
+                <li class="navbar-li"><a href="/Discover/Discover-Credit">Discover Credit</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="acct-table">
+                <table>
+                    <tr>
+                        <% for (let i = 0; i < title.length; i++) { %>
+                            <th><%= title[i]%></th>
+                        <% } %>
+                    </tr>
+                        <% if (userData.length !== 0) { %>
+                            <% userData.forEach( (data) => { %>
+                                <tr>
+                                    <% for (let i = 0; i < title.length; i++) { %>
+                                        <td><%= data[title[i]]%></td>
+                                    <% } %>
+                                </tr>
+                            <%  }); %>
+                        <% } else { %>
+                        <tr>
+                            <td colspan="<%= title.length%>">No Data Found</td>
+                        </tr>
+                        <% } %>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <%- include('partials/footer') %>
+        </footer>
+    </div>
+</body>
+</html>
